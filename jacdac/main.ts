@@ -47,9 +47,9 @@ namespace servers {
         }
 
         private syncMessage() {
-            if (!this.message) grove_lcd.writeString("                ", 0, 100)
+            if (!this.message) grove_lcd.writeStringNL("                \n                ")
             else
-                grove_lcd.writeString(this.message, 0, 100)
+                grove_lcd.writeStringNL(this.message)
         }
     }
     function start() {
