@@ -1,9 +1,9 @@
 {
     "name": "grove-lcd-jacdac",
-    "version": "0.0.2",
+    "version": "0.1.1",
     "dependencies": {
         "core": "*",
-        "pxt-grove-lcd": "github:mkleinsb/pxt-grove-lcd#v0.1.0",
+        "pxt-grove-lcd": "github:mkleinsb/pxt-grove-lcd",
         "jacdac": "github:microsoft/pxt-jacdac#v1.9.11",
         "jacdac-character-screen": "github:microsoft/pxt-jacdac/character-screen#v1.9.11"
     },
