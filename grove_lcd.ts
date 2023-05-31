@@ -126,6 +126,23 @@ namespace grove_lcd {
 
     }
 
+    // function for extracting NewLine. Hidden because it´s only for Jacdac
+    export function writeStringNL(str: string) {
+        let part1 = ""
+        let part2 = ""
+        let posNL = 0
+        if (str.includes("\\n")) {
+            posNL = str.indexOf("\\n")
+            row0 = str.substr(0, posNL)
+            row0Written = true
+            row1 = str.substr(posNL + 2, str.length - (posNL + 2))
+            row1Written = true
+        } else {
+            row0 = str
+            row0Written = true
+        }
+    }
+
     function clearrow0() {
         setCursor(0, 0)
         writeLCD("                ")
