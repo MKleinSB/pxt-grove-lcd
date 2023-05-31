@@ -2,8 +2,6 @@
     "name": "grove-lcd-jacdac",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*",
         "pxt-grove-lcd": "github:mkleinsb/pxt-grove-lcd",
         "jacdac": "github:microsoft/pxt-jacdac#v1.9.11",
         "jacdac-character-screen": "github:microsoft/pxt-jacdac/character-screen#v1.9.11"
