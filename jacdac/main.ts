@@ -34,7 +34,7 @@ namespace servers {
             this.handleRegFormat(pkt,
                 jacdac.CharacterScreenReg.Rows,
                 jacdac.CharacterScreenRegPack.Rows,
-                [2]) // NUMBER_OF_CHAR_PER_LINE
+                [2]) // NUMBER_OF_LINES
 
             const oldMessage = this.message
             this.message = this.handleRegValue(
