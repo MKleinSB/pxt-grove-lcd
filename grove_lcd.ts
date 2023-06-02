@@ -118,7 +118,7 @@ namespace grove_lcd {
      * @param speed speed of the scrolling text
      */
     //% weight=87 blockGap=8
-    //% block="write | %str to row %row  || with speed %speed ms"
+    //% block="write | %str to row %row  || with speed | %speed ms"
     //% blockId=write_String
     //% row.min=0 row.max=1
     //% speed.shadow=timePicker speed.defl=100
