@@ -141,7 +141,7 @@ namespace grove_lcd {
     //% block="plot bar graph of | %wert up to %max  || in row %row"
     //% blockId=lcd_plotBarGraph
     //% row.min=0 row.max=1
-    export function Bargraph(wert: number, max: number, row: number = 0) {
+    export function bargraph(wert: number, max: number, row: number = 0) {
         let bar = ""
         if (wert > max) { max = wert }
         for (let Index = 0; Index <= pins.map(
