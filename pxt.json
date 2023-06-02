@@ -1,5 +1,5 @@
 {
-    "name": "pxt-grove-lcd",
+    "name": "pxt-grove_lcd",
     "version": "0.2.0",
     "description": "Driver for Grove-16x2 LCD",
     "dependencies": {
