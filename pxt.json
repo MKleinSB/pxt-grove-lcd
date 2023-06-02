@@ -10,7 +10,8 @@
         "main.blocks",
         "main.ts",
         "grove_lcd.ts",
-        "_locales/de/grove_lcd-strings.json"
+        "_locales/de/grove_lcd-strings.json",
+         "_locales/de/grove_lcd-strings.json"
     ],
     "testFiles": [
         "test.ts"
