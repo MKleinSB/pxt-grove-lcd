@@ -138,19 +138,21 @@ namespace grove_lcd {
 
     }
 
+    /**
+    * plots a bar graph on the LCD display
+    * @param wert value to display
+    * @param max maximum value
+    * @param row row to be written to
+    */
     //% block="plot bar graph of | %wert up to %max  || in row %row"
     //% blockId=lcd_plotBarGraph
     //% row.min=0 row.max=1
-    export function bargraph(wert: number, max: number, row: number = 0) {
+    export function bargraph(value: number, max: number, row: number = 0) {
         let bar = ""
-        if (wert > max) { max = wert }
+        if (value > max) { max = value }
         for (let Index = 0; Index <= pins.map(
-            wert,
-            0,
-            max,
-            0,
-            15
-        ); Index++) {
+            value,0,max,0,15); 
+            Index++) {
             bar = bar + String.fromCharCode(255)
         }
         grove_lcd.writeString(bar, row)
