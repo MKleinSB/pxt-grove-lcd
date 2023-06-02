@@ -1,6 +1,8 @@
 
 > Diese Seite bei [https://mkleinsb.github.io/pxt-grove-lcd/](https://mkleinsb.github.io/pxt-grove-lcd/) öffnen
 
+basierend auf **https://github.com/calliope-edu/pxt-display**
+
 ## Als Erweiterung verwenden
 
 Dieses Repository kann als **Erweiterung** in MakeCode hinzugefügt werden.
