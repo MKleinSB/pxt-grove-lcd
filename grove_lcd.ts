@@ -1,5 +1,5 @@
 //% weight=100 color=#00A654 icon="\uf068" block="Grove LCD"
-namespace grovelcd {
+namespace grove_lcd {
 
 
     let isnotinitialized = true
