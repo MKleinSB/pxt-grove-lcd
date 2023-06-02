@@ -1,5 +1,5 @@
 //% weight=100 color=#00A654 icon="\uf068" block="Grove LCD"
-namespace grove_lcd {
+namespace grovelcd {
 
 
     let isnotinitialized = true
@@ -155,7 +155,7 @@ namespace grove_lcd {
             Index++) {
             bar = bar + String.fromCharCode(255)
         }
-        grove_lcd.writeString(bar, row)
+        writeString(bar, row)
     }
 
     // function for extracting NewLine. Hidden because it´s only for Jacdac
