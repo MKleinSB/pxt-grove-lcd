@@ -94,7 +94,19 @@ namespace grove_lcd {
         let buf = pins.createBuffer(str.length + 1)
         buf[0] = 0x40
         for (let index = 1; index <= str.length; index++) {
-            buf[index] = str.charCodeAt(index - 1)
+            if (str[index - 1] == "ä" || str[index - 1] == "Ä") {
+                buf[index] = 225
+            } else if (str[index - 1] == "ö" || str[index - 1] == "Ö") {
+                buf[index] = 239
+            } else if (str[index - 1] == "ü" || str[index - 1] == "Ü") {
+                buf[index] = 245
+            } else if (str[index - 1] == "ß") {
+                buf[index] = 226
+            } else if (str[index - 1] == "˚") {
+                buf[index] = 223
+            } else {
+                buf[index] = str.charCodeAt(index - 1)
+            }
         }
         pins.i2cWriteBuffer(0x3E, buf)
     }
@@ -124,6 +136,24 @@ namespace grove_lcd {
             row1Written = true
         }
 
+    }
+
+    //% block="plot bar graph of | %wert up to %max  || in row %row"
+    //% blockId=lcd_plotBarGraph
+    //% row.min=0 row.max=1
+    export function Bargraph(wert: number, max: number, row: number = 0) {
+        let bar = ""
+        if (wert > max) { max = wert }
+        for (let Index = 0; Index <= pins.map(
+            wert,
+            0,
+            max,
+            0,
+            15
+        ); Index++) {
+            bar = bar + String.fromCharCode(255)
+        }
+        grove_lcd.writeString(bar, row)
     }
 
     // function for extracting NewLine. Hidden because it´s only for Jacdac
