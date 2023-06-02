@@ -1,0 +1,4 @@
+{
+	"grove_lcd.writeString|block": "Schreibe | %str | auf Zeile | %row || und bewege die Zeichen mit | %speed | ms",
+	"grove_lcd.lcd_plotBarGraph|block": "Zeichne Balkendiagramm von | %wert bis %max  || in Zeile %row"
+}
