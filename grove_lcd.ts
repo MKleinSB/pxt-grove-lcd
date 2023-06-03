@@ -118,7 +118,7 @@ namespace grove_lcd {
      * @param speed speed of the scrolling text
      */
     //% weight=87 blockGap=8
-    //% block="write | %str | to row | %row || with speed | %speed |nms"
+    //% block="write  %str  to row  %row || with speed %speed ms"
     //% blockId=write_String
     //% row.min=0 row.max=1
     //% speed.shadow=timePicker speed.defl=100
@@ -144,7 +144,7 @@ namespace grove_lcd {
     * @param max maximum value
     * @param row row to be written to
     */
-    //% block="plot bar graph of | %value | up to | %max || in row | %row"
+    //% block="plot bar graph of %value up to %max || in row %row"
     //% blockId=plot_BarGraph
     //% row.min=0 row.max=1
     export function bargraph(value: number, max: number, row: number = 0) {
