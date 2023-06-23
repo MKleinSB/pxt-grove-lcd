@@ -101,7 +101,7 @@ namespace grove_lcd {
                 buf[index] = 245
             } else if (str[index - 1] == "ß") {
                 buf[index] = 226
-            } else if (str[index - 1] == "˚") {
+            } else if (str[index - 1] == "˚" || str[index - 1] == "°") {
                 buf[index] = 223
             } else {
                 buf[index] = str.charCodeAt(index - 1)
