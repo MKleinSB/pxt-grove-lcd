@@ -3,9 +3,10 @@
     "version": "1.0.0",
     "dependencies": {
         "core": "*",
-        "pxt-grove-lcd": "github:mkleinsb/pxt-grove-lcd",
-        "jacdac": "github:microsoft/pxt-jacdac#v1.9.22",
-        "jacdac-character-screen": "github:microsoft/pxt-jacdac/character-screen#v1.9.22"
+        "pxt-grove-lcd": "github:mkleinsb/pxt-grove-lcd#v1.0.0",
+        "jacdac": "github:microsoft/pxt-jacdac#v1.9.24",
+        "jacdac-character-screen": "github:microsoft/pxt-jacdac/character-screen#v1.9.24",
+        "v3": "*"
     },
     "files": [
         "main.ts",
@@ -15,7 +16,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "6.0.22",
+        "target": "6.0.27",
         "targetId": "calliopemini"
     },
     "supportedTargets": [
