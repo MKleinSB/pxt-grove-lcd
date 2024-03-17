@@ -1,6 +1,6 @@
 {
     "name": "grove-lcd-jacdac",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "dependencies": {
         "core": "*",
         "pxt-grove-lcd": "github:mkleinsb/pxt-grove-lcd",
