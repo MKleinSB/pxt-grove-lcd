@@ -4,8 +4,8 @@
     "dependencies": {
         "core": "*",
         "pxt-grove-lcd": "github:mkleinsb/pxt-grove-lcd",
-        "jacdac": "github:microsoft/pxt-jacdac#v1.9.27",
-        "jacdac-character-screen": "github:microsoft/pxt-jacdac/character-screen#v1.9.27",
+        "jacdac": "github:microsoft/pxt-jacdac#v1.9.28",
+        "jacdac-character-screen": "github:microsoft/pxt-jacdac/character-screen#v1.9.28",
         "v3": "*"
     },
     "files": [
